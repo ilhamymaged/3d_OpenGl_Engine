@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include
+C_INCLUDES = -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/tiny_obj_loader -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include
+CXX_INCLUDES = -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/tiny_obj_loader -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include
 
 CXX_FLAGS = 
 

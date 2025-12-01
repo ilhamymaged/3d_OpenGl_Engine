@@ -3,11 +3,11 @@
 cmake_policy(SET CMP0009 NEW)
 
 # SRC_FILES at CMakeLists.txt:14 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/*.c")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/*.c")
 set(OLD_GLOB
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/context.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -15,16 +15,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # SRC_FILES at CMakeLists.txt:14 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor/*.c")
-set(OLD_GLOB
-  )
-if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
-  message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles/cmake.verify_globs")
-endif()
-
-# SRC_FILES at CMakeLists.txt:14 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer/*.c")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/editor/*.c")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -33,7 +24,17 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # SRC_FILES at CMakeLists.txt:14 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene/*.c")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/*.c")
+set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.c"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SRC_FILES at CMakeLists.txt:14 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/*.c")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

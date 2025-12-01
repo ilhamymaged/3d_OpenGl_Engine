@@ -11,29 +11,30 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
-file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS Core/*.c Renderer/*.c Editor/*.c Scene/*.c)
-list(APPEND SRC_FILES main.c Vendor/glad/src/glad.c 
-Vendor/stb/stb_image.c Vendor/tiny_obj_loader/tiny_obj_loader.cpp)
+file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS core/*.c renderer/*.c editor/*.c scene/*.c)
+list(APPEND SRC_FILES main.c vendor/glad/src/glad.c
+vendor/stb/stb_image.c vendor/tiny_obj_loader/tiny_obj_loader.cpp)
 
 add_executable (CMakeTarget ${SRC_FILES})
 
 target_include_directories(CMakeTarget PRIVATE 
-    Core 
-    Editor
-    Renderer
-    Scene
-    Vendor/entt
-    Vendor/glm  
-    Vendor/glad/include
-    Vendor/KHR
-    Vendor/stb
-    Vendor/tiny_obj_loader
-    Vendor/glfw/include
+    core
+    editor
+    renderer
+    scene
+    vendor/entt
+    vendor/glm
+    vendor/glad/include
+    vendor/KHR
+    vendor/stb
+    vendor/tiny_obj_loader
+    vendor/glfw/include
+    vendor/cglm/include
 )
 add_library(glfw3 STATIC IMPORTED)
 set_target_properties(glfw3 PROPERTIES
-    IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/Vendor/glfw/build/src/libglfw3.a"
-    INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/Vendor/glfw/include"
+    IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/vendor/glfw/build/src/libglfw3.a"
+    INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/vendor/glfw/include"
 )
 
 target_link_libraries(CMakeTarget PRIVATE glfw3)

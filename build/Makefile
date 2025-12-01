@@ -130,149 +130,77 @@ CMakeTarget/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/build
 .PHONY : CMakeTarget/fast
 
-Core/Application.o: Core/Application.c.o
-.PHONY : Core/Application.o
+core/application.o: core/application.c.o
+.PHONY : core/application.o
 
 # target to build an object file
-Core/Application.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Application.c.o
-.PHONY : Core/Application.c.o
+core/application.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/application.c.o
+.PHONY : core/application.c.o
 
-Core/Application.i: Core/Application.c.i
-.PHONY : Core/Application.i
+core/application.i: core/application.c.i
+.PHONY : core/application.i
 
 # target to preprocess a source file
-Core/Application.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Application.c.i
-.PHONY : Core/Application.c.i
+core/application.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/application.c.i
+.PHONY : core/application.c.i
 
-Core/Application.s: Core/Application.c.s
-.PHONY : Core/Application.s
+core/application.s: core/application.c.s
+.PHONY : core/application.s
 
 # target to generate assembly for a file
-Core/Application.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Application.c.s
-.PHONY : Core/Application.c.s
+core/application.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/application.c.s
+.PHONY : core/application.c.s
 
-Core/Context.o: Core/Context.c.o
-.PHONY : Core/Context.o
+core/context.o: core/context.c.o
+.PHONY : core/context.o
 
 # target to build an object file
-Core/Context.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Context.c.o
-.PHONY : Core/Context.c.o
+core/context.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/context.c.o
+.PHONY : core/context.c.o
 
-Core/Context.i: Core/Context.c.i
-.PHONY : Core/Context.i
+core/context.i: core/context.c.i
+.PHONY : core/context.i
 
 # target to preprocess a source file
-Core/Context.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Context.c.i
-.PHONY : Core/Context.c.i
+core/context.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/context.c.i
+.PHONY : core/context.c.i
 
-Core/Context.s: Core/Context.c.s
-.PHONY : Core/Context.s
+core/context.s: core/context.c.s
+.PHONY : core/context.s
 
 # target to generate assembly for a file
-Core/Context.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Context.c.s
-.PHONY : Core/Context.c.s
+core/context.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/context.c.s
+.PHONY : core/context.c.s
 
-Core/Window.o: Core/Window.c.o
-.PHONY : Core/Window.o
+core/window.o: core/window.c.o
+.PHONY : core/window.o
 
 # target to build an object file
-Core/Window.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Window.c.o
-.PHONY : Core/Window.c.o
+core/window.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/window.c.o
+.PHONY : core/window.c.o
 
-Core/Window.i: Core/Window.c.i
-.PHONY : Core/Window.i
-
-# target to preprocess a source file
-Core/Window.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Window.c.i
-.PHONY : Core/Window.c.i
-
-Core/Window.s: Core/Window.c.s
-.PHONY : Core/Window.s
-
-# target to generate assembly for a file
-Core/Window.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Window.c.s
-.PHONY : Core/Window.c.s
-
-Vendor/glad/src/glad.o: Vendor/glad/src/glad.c.o
-.PHONY : Vendor/glad/src/glad.o
-
-# target to build an object file
-Vendor/glad/src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o
-.PHONY : Vendor/glad/src/glad.c.o
-
-Vendor/glad/src/glad.i: Vendor/glad/src/glad.c.i
-.PHONY : Vendor/glad/src/glad.i
+core/window.i: core/window.c.i
+.PHONY : core/window.i
 
 # target to preprocess a source file
-Vendor/glad/src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.i
-.PHONY : Vendor/glad/src/glad.c.i
+core/window.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/window.c.i
+.PHONY : core/window.c.i
 
-Vendor/glad/src/glad.s: Vendor/glad/src/glad.c.s
-.PHONY : Vendor/glad/src/glad.s
-
-# target to generate assembly for a file
-Vendor/glad/src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.s
-.PHONY : Vendor/glad/src/glad.c.s
-
-Vendor/stb/stb_image.o: Vendor/stb/stb_image.c.o
-.PHONY : Vendor/stb/stb_image.o
-
-# target to build an object file
-Vendor/stb/stb_image.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o
-.PHONY : Vendor/stb/stb_image.c.o
-
-Vendor/stb/stb_image.i: Vendor/stb/stb_image.c.i
-.PHONY : Vendor/stb/stb_image.i
-
-# target to preprocess a source file
-Vendor/stb/stb_image.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.i
-.PHONY : Vendor/stb/stb_image.c.i
-
-Vendor/stb/stb_image.s: Vendor/stb/stb_image.c.s
-.PHONY : Vendor/stb/stb_image.s
+core/window.s: core/window.c.s
+.PHONY : core/window.s
 
 # target to generate assembly for a file
-Vendor/stb/stb_image.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.s
-.PHONY : Vendor/stb/stb_image.c.s
-
-Vendor/tiny_obj_loader/tiny_obj_loader.o: Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
-.PHONY : Vendor/tiny_obj_loader/tiny_obj_loader.o
-
-# target to build an object file
-Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
-.PHONY : Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
-
-Vendor/tiny_obj_loader/tiny_obj_loader.i: Vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
-.PHONY : Vendor/tiny_obj_loader/tiny_obj_loader.i
-
-# target to preprocess a source file
-Vendor/tiny_obj_loader/tiny_obj_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
-.PHONY : Vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
-
-Vendor/tiny_obj_loader/tiny_obj_loader.s: Vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
-.PHONY : Vendor/tiny_obj_loader/tiny_obj_loader.s
-
-# target to generate assembly for a file
-Vendor/tiny_obj_loader/tiny_obj_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
-.PHONY : Vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
+core/window.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/window.c.s
+.PHONY : core/window.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -298,6 +226,102 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/main.c.s
 .PHONY : main.c.s
 
+renderer/renderer.o: renderer/renderer.c.o
+.PHONY : renderer/renderer.o
+
+# target to build an object file
+renderer/renderer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o
+.PHONY : renderer/renderer.c.o
+
+renderer/renderer.i: renderer/renderer.c.i
+.PHONY : renderer/renderer.i
+
+# target to preprocess a source file
+renderer/renderer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/renderer.c.i
+.PHONY : renderer/renderer.c.i
+
+renderer/renderer.s: renderer/renderer.c.s
+.PHONY : renderer/renderer.s
+
+# target to generate assembly for a file
+renderer/renderer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/renderer.c.s
+.PHONY : renderer/renderer.c.s
+
+vendor/glad/src/glad.o: vendor/glad/src/glad.c.o
+.PHONY : vendor/glad/src/glad.o
+
+# target to build an object file
+vendor/glad/src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.o
+.PHONY : vendor/glad/src/glad.c.o
+
+vendor/glad/src/glad.i: vendor/glad/src/glad.c.i
+.PHONY : vendor/glad/src/glad.i
+
+# target to preprocess a source file
+vendor/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.i
+.PHONY : vendor/glad/src/glad.c.i
+
+vendor/glad/src/glad.s: vendor/glad/src/glad.c.s
+.PHONY : vendor/glad/src/glad.s
+
+# target to generate assembly for a file
+vendor/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.s
+.PHONY : vendor/glad/src/glad.c.s
+
+vendor/stb/stb_image.o: vendor/stb/stb_image.c.o
+.PHONY : vendor/stb/stb_image.o
+
+# target to build an object file
+vendor/stb/stb_image.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.o
+.PHONY : vendor/stb/stb_image.c.o
+
+vendor/stb/stb_image.i: vendor/stb/stb_image.c.i
+.PHONY : vendor/stb/stb_image.i
+
+# target to preprocess a source file
+vendor/stb/stb_image.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.i
+.PHONY : vendor/stb/stb_image.c.i
+
+vendor/stb/stb_image.s: vendor/stb/stb_image.c.s
+.PHONY : vendor/stb/stb_image.s
+
+# target to generate assembly for a file
+vendor/stb/stb_image.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.s
+.PHONY : vendor/stb/stb_image.c.s
+
+vendor/tiny_obj_loader/tiny_obj_loader.o: vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
+.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.o
+
+# target to build an object file
+vendor/tiny_obj_loader/tiny_obj_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
+.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
+
+vendor/tiny_obj_loader/tiny_obj_loader.i: vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
+.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.i
+
+# target to preprocess a source file
+vendor/tiny_obj_loader/tiny_obj_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
+.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
+
+vendor/tiny_obj_loader/tiny_obj_loader.s: vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
+.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.s
+
+# target to generate assembly for a file
+vendor/tiny_obj_loader/tiny_obj_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
+.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -307,27 +331,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CMakeTarget"
-	@echo "... Core/Application.o"
-	@echo "... Core/Application.i"
-	@echo "... Core/Application.s"
-	@echo "... Core/Context.o"
-	@echo "... Core/Context.i"
-	@echo "... Core/Context.s"
-	@echo "... Core/Window.o"
-	@echo "... Core/Window.i"
-	@echo "... Core/Window.s"
-	@echo "... Vendor/glad/src/glad.o"
-	@echo "... Vendor/glad/src/glad.i"
-	@echo "... Vendor/glad/src/glad.s"
-	@echo "... Vendor/stb/stb_image.o"
-	@echo "... Vendor/stb/stb_image.i"
-	@echo "... Vendor/stb/stb_image.s"
-	@echo "... Vendor/tiny_obj_loader/tiny_obj_loader.o"
-	@echo "... Vendor/tiny_obj_loader/tiny_obj_loader.i"
-	@echo "... Vendor/tiny_obj_loader/tiny_obj_loader.s"
+	@echo "... core/application.o"
+	@echo "... core/application.i"
+	@echo "... core/application.s"
+	@echo "... core/context.o"
+	@echo "... core/context.i"
+	@echo "... core/context.s"
+	@echo "... core/window.o"
+	@echo "... core/window.i"
+	@echo "... core/window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... renderer/renderer.o"
+	@echo "... renderer/renderer.i"
+	@echo "... renderer/renderer.s"
+	@echo "... vendor/glad/src/glad.o"
+	@echo "... vendor/glad/src/glad.i"
+	@echo "... vendor/glad/src/glad.s"
+	@echo "... vendor/stb/stb_image.o"
+	@echo "... vendor/stb/stb_image.i"
+	@echo "... vendor/stb/stb_image.s"
+	@echo "... vendor/tiny_obj_loader/tiny_obj_loader.o"
+	@echo "... vendor/tiny_obj_loader/tiny_obj_loader.i"
+	@echo "... vendor/tiny_obj_loader/tiny_obj_loader.s"
 .PHONY : help
 
 

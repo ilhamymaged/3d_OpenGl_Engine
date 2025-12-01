@@ -8,13 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c" "CMakeFiles/CMakeTarget.dir/Core/Application.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Core/Application.c.o.d"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c" "CMakeFiles/CMakeTarget.dir/Core/Context.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Core/Context.c.o.d"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c" "CMakeFiles/CMakeTarget.dir/Core/Window.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Core/Window.c.o.d"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/src/glad.c" "CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o.d"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb/stb_image.c" "CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c" "CMakeFiles/CMakeTarget.dir/core/application.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/application.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/context.c" "CMakeFiles/CMakeTarget.dir/core/context.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/context.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.c" "CMakeFiles/CMakeTarget.dir/core/window.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/window.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c" "CMakeFiles/CMakeTarget.dir/main.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/main.c.o.d"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader/tiny_obj_loader.cpp" "CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o" "gcc" "CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.c" "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/src/glad.c" "CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/stb/stb_image.c" "CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/tiny_obj_loader/tiny_obj_loader.cpp" "CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o" "gcc" "CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o.d"
   )
 
 # Targets to which this target links.
