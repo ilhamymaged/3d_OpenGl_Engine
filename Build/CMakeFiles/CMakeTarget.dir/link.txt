@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CMakeTarget.dir/main.c.o CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o -o CMakeTarget  Vendor/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 

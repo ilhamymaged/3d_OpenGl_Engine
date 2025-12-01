@@ -1,0 +1,152 @@
+[
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build",
+  "command": "/usr/bin/cc  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/main.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build",
+  "command": "/usr/bin/cc  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/src/glad.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/src/glad.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build",
+  "command": "/usr/bin/cc  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb/stb_image.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb/stb_image.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build",
+  "command": "/usr/bin/c++  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader/tiny_obj_loader.cpp",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader/tiny_obj_loader.cpp"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/context.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/context.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/context.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/init.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/init.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/init.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/input.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/input.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/input.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/monitor.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/monitor.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/monitor.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/platform.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/platform.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/platform.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/vulkan.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/vulkan.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/window.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/window.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/window.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/egl_context.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/egl_context.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/osmesa_context.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/null_init.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_init.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_init.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/null_monitor.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_monitor.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_monitor.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/null_window.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_window.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_window.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/null_joystick.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_joystick.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/null_joystick.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_module.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_module.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_module.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_time.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_time.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_thread.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/x11_init.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/x11_init.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/x11_monitor.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/x11_window.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/x11_window.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/xkb_unicode.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/glx_context.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/glx_context.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/wl_init.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/wl_init.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/wl_init.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/wl_monitor.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/wl_monitor.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/wl_monitor.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/wl_window.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/wl_window.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/wl_window.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/linux_joystick.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_poll.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_poll.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/src/posix_poll.c"
+}
+]
