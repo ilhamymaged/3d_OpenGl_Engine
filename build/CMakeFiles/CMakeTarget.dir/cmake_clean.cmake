@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CMakeTarget.dir/Core/Application.c.o"
+  "CMakeFiles/CMakeTarget.dir/Core/Application.c.o.d"
+  "CMakeFiles/CMakeTarget.dir/Core/Context.c.o"
+  "CMakeFiles/CMakeTarget.dir/Core/Context.c.o.d"
   "CMakeFiles/CMakeTarget.dir/Core/Window.c.o"
   "CMakeFiles/CMakeTarget.dir/Core/Window.c.o.d"
   "CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o"

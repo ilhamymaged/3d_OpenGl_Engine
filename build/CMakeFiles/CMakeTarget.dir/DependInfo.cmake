@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c" "CMakeFiles/CMakeTarget.dir/Core/Application.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Core/Application.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c" "CMakeFiles/CMakeTarget.dir/Core/Context.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Core/Context.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c" "CMakeFiles/CMakeTarget.dir/Core/Window.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Core/Window.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/src/glad.c" "CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb/stb_image.c" "CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o.d"

@@ -1,6 +1,8 @@
 CMakeFiles/CMakeTarget.dir/main.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c \
  /usr/include/stdc-predef.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include/GLFW/glfw3.h \

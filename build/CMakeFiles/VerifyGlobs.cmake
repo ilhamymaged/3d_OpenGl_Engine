@@ -5,6 +5,8 @@ cmake_policy(SET CMP0009 NEW)
 # SRC_FILES at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/*.c")
 set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

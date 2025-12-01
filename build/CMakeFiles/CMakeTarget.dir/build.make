@@ -69,10 +69,38 @@ include CMakeFiles/CMakeTarget.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CMakeTarget.dir/flags.make
 
+CMakeFiles/CMakeTarget.dir/Core/Application.c.o: CMakeFiles/CMakeTarget.dir/flags.make
+CMakeFiles/CMakeTarget.dir/Core/Application.c.o: ../Core/Application.c
+CMakeFiles/CMakeTarget.dir/Core/Application.c.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CMakeTarget.dir/Core/Application.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/Core/Application.c.o -MF CMakeFiles/CMakeTarget.dir/Core/Application.c.o.d -o CMakeFiles/CMakeTarget.dir/Core/Application.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c
+
+CMakeFiles/CMakeTarget.dir/Core/Application.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CMakeTarget.dir/Core/Application.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c > CMakeFiles/CMakeTarget.dir/Core/Application.c.i
+
+CMakeFiles/CMakeTarget.dir/Core/Application.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CMakeTarget.dir/Core/Application.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c -o CMakeFiles/CMakeTarget.dir/Core/Application.c.s
+
+CMakeFiles/CMakeTarget.dir/Core/Context.c.o: CMakeFiles/CMakeTarget.dir/flags.make
+CMakeFiles/CMakeTarget.dir/Core/Context.c.o: ../Core/Context.c
+CMakeFiles/CMakeTarget.dir/Core/Context.c.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CMakeTarget.dir/Core/Context.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/Core/Context.c.o -MF CMakeFiles/CMakeTarget.dir/Core/Context.c.o.d -o CMakeFiles/CMakeTarget.dir/Core/Context.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c
+
+CMakeFiles/CMakeTarget.dir/Core/Context.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CMakeTarget.dir/Core/Context.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c > CMakeFiles/CMakeTarget.dir/Core/Context.c.i
+
+CMakeFiles/CMakeTarget.dir/Core/Context.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CMakeTarget.dir/Core/Context.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c -o CMakeFiles/CMakeTarget.dir/Core/Context.c.s
+
 CMakeFiles/CMakeTarget.dir/Core/Window.c.o: CMakeFiles/CMakeTarget.dir/flags.make
 CMakeFiles/CMakeTarget.dir/Core/Window.c.o: ../Core/Window.c
 CMakeFiles/CMakeTarget.dir/Core/Window.c.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CMakeTarget.dir/Core/Window.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CMakeTarget.dir/Core/Window.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/Core/Window.c.o -MF CMakeFiles/CMakeTarget.dir/Core/Window.c.o.d -o CMakeFiles/CMakeTarget.dir/Core/Window.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c
 
 CMakeFiles/CMakeTarget.dir/Core/Window.c.i: cmake_force
@@ -86,7 +114,7 @@ CMakeFiles/CMakeTarget.dir/Core/Window.c.s: cmake_force
 CMakeFiles/CMakeTarget.dir/main.c.o: CMakeFiles/CMakeTarget.dir/flags.make
 CMakeFiles/CMakeTarget.dir/main.c.o: ../main.c
 CMakeFiles/CMakeTarget.dir/main.c.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CMakeTarget.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CMakeTarget.dir/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/main.c.o -MF CMakeFiles/CMakeTarget.dir/main.c.o.d -o CMakeFiles/CMakeTarget.dir/main.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c
 
 CMakeFiles/CMakeTarget.dir/main.c.i: cmake_force
@@ -100,7 +128,7 @@ CMakeFiles/CMakeTarget.dir/main.c.s: cmake_force
 CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o: CMakeFiles/CMakeTarget.dir/flags.make
 CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o: ../Vendor/glad/src/glad.c
 CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o -MF CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o.d -o CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/src/glad.c
 
 CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.s: cmake_force
 CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o: CMakeFiles/CMakeTarget.dir/flags.make
 CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o: ../Vendor/stb/stb_image.c
 CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o -MF CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o.d -o CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb/stb_image.c
 
 CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.i: cmake_force
@@ -128,7 +156,7 @@ CMakeFiles/CMakeTarget.dir/Vendor/stb/stb_image.c.s: cmake_force
 CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: CMakeFiles/CMakeTarget.dir/flags.make
 CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../Vendor/tiny_obj_loader/tiny_obj_loader.cpp
 CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: CMakeFiles/CMakeTarget.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o -MF CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o.d -o CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader/tiny_obj_loader.cpp
 
 CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.i: cmake_force
@@ -141,6 +169,8 @@ CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.cpp.s: cmake_f
 
 # Object files for target CMakeTarget
 CMakeTarget_OBJECTS = \
+"CMakeFiles/CMakeTarget.dir/Core/Application.c.o" \
+"CMakeFiles/CMakeTarget.dir/Core/Context.c.o" \
 "CMakeFiles/CMakeTarget.dir/Core/Window.c.o" \
 "CMakeFiles/CMakeTarget.dir/main.c.o" \
 "CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o" \
@@ -150,6 +180,8 @@ CMakeTarget_OBJECTS = \
 # External object files for target CMakeTarget
 CMakeTarget_EXTERNAL_OBJECTS =
 
+CMakeTarget: CMakeFiles/CMakeTarget.dir/Core/Application.c.o
+CMakeTarget: CMakeFiles/CMakeTarget.dir/Core/Context.c.o
 CMakeTarget: CMakeFiles/CMakeTarget.dir/Core/Window.c.o
 CMakeTarget: CMakeFiles/CMakeTarget.dir/main.c.o
 CMakeTarget: CMakeFiles/CMakeTarget.dir/Vendor/glad/src/glad.c.o
@@ -158,7 +190,7 @@ CMakeTarget: CMakeFiles/CMakeTarget.dir/Vendor/tiny_obj_loader/tiny_obj_loader.c
 CMakeTarget: CMakeFiles/CMakeTarget.dir/build.make
 CMakeTarget: ../Vendor/glfw/build/src/libglfw3.a
 CMakeTarget: CMakeFiles/CMakeTarget.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CMakeTarget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CMakeTarget"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CMakeTarget.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

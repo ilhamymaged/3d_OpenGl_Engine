@@ -1,6 +1,16 @@
 [
 {
   "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build",
+  "command": "/usr/bin/cc  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/Core/Application.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Application.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build",
+  "command": "/usr/bin/cc  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/Core/Context.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c",
+  "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Context.c"
+},
+{
+  "directory": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build",
   "command": "/usr/bin/cc  -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/tiny_obj_loader -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Vendor/glfw/include  -o CMakeFiles/CMakeTarget.dir/Core/Window.c.o -c /home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c",
   "file": "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Core/Window.c"
 },

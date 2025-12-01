@@ -130,6 +130,54 @@ CMakeTarget/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/build
 .PHONY : CMakeTarget/fast
 
+Core/Application.o: Core/Application.c.o
+.PHONY : Core/Application.o
+
+# target to build an object file
+Core/Application.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Application.c.o
+.PHONY : Core/Application.c.o
+
+Core/Application.i: Core/Application.c.i
+.PHONY : Core/Application.i
+
+# target to preprocess a source file
+Core/Application.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Application.c.i
+.PHONY : Core/Application.c.i
+
+Core/Application.s: Core/Application.c.s
+.PHONY : Core/Application.s
+
+# target to generate assembly for a file
+Core/Application.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Application.c.s
+.PHONY : Core/Application.c.s
+
+Core/Context.o: Core/Context.c.o
+.PHONY : Core/Context.o
+
+# target to build an object file
+Core/Context.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Context.c.o
+.PHONY : Core/Context.c.o
+
+Core/Context.i: Core/Context.c.i
+.PHONY : Core/Context.i
+
+# target to preprocess a source file
+Core/Context.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Context.c.i
+.PHONY : Core/Context.c.i
+
+Core/Context.s: Core/Context.c.s
+.PHONY : Core/Context.s
+
+# target to generate assembly for a file
+Core/Context.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/Core/Context.c.s
+.PHONY : Core/Context.c.s
+
 Core/Window.o: Core/Window.c.o
 .PHONY : Core/Window.o
 
@@ -259,6 +307,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CMakeTarget"
+	@echo "... Core/Application.o"
+	@echo "... Core/Application.i"
+	@echo "... Core/Application.s"
+	@echo "... Core/Context.o"
+	@echo "... Core/Context.i"
+	@echo "... Core/Context.s"
 	@echo "... Core/Window.o"
 	@echo "... Core/Window.i"
 	@echo "... Core/Window.s"
