@@ -3,14 +3,15 @@ project ("gameEngine")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -g -O0")
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0")
+
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
-add_subdirectory(Vendor/glfw)
-
-file(GLOB_RECURSE SRC_FILES Core/*.c Renderer/*.c Editor/*.c Scene/*.c)
+file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS Core/*.c Renderer/*.c Editor/*.c Scene/*.c)
 list(APPEND SRC_FILES main.c Vendor/glad/src/glad.c 
 Vendor/stb/stb_image.c Vendor/tiny_obj_loader/tiny_obj_loader.cpp)
 
@@ -27,9 +28,15 @@ target_include_directories(CMakeTarget PRIVATE
     Vendor/KHR
     Vendor/stb
     Vendor/tiny_obj_loader
+    Vendor/glfw/include
+)
+add_library(glfw3 STATIC IMPORTED)
+set_target_properties(glfw3 PROPERTIES
+    IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/Vendor/glfw/build/src/libglfw3.a"
+    INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/Vendor/glfw/include"
 )
 
-target_link_libraries(CMakeTarget PRIVATE glfw)
+target_link_libraries(CMakeTarget PRIVATE glfw3)
 
 if (WIN32)
     target_link_libraries(CMakeTarget PRIVATE opengl32)

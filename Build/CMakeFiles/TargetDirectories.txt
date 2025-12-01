@@ -1,9 +1,0 @@
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/CMakeFiles/CMakeTarget.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/CMakeFiles/edit_cache.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/CMakeFiles/rebuild_cache.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/CMakeFiles/edit_cache.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/CMakeFiles/rebuild_cache.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src/CMakeFiles/glfw.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src/CMakeFiles/update_mappings.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src/CMakeFiles/edit_cache.dir
-/home/ilhamymaged/Dev/GameDevelopment/GameEngine/Build/Vendor/glfw/src/CMakeFiles/rebuild_cache.dir
