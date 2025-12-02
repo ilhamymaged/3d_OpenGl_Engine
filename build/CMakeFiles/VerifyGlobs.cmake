@@ -6,6 +6,7 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/*.c")
 set(OLD_GLOB
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/time.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -16,6 +17,16 @@ endif()
 # SRC_FILES at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/editor/*.c")
 set(OLD_GLOB
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SRC_FILES at CMakeLists.txt:14 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/*.c")
+set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -38,6 +49,7 @@ endif()
 # SRC_FILES at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/*.c")
 set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/camera.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/context.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/scene.c"
   )

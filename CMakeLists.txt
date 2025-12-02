@@ -11,7 +11,8 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
-file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS core/*.c renderer/*.c editor/*.c scene/*.c utility/*.c)
+file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS core/*.c renderer/*.c 
+    editor/*.c scene/*.c utility/*.c inputs/*.c)
 list(APPEND SRC_FILES main.c vendor/glad/src/glad.c
 vendor/stb/stb_image.c vendor/tiny_obj_loader/tiny_obj_loader.cpp)
 
@@ -19,6 +20,7 @@ add_executable (CMakeTarget ${SRC_FILES})
 
 target_include_directories(CMakeTarget PRIVATE 
     core
+    inputs
     editor
     renderer
     scene

@@ -1,6 +1,12 @@
+#include <glad/glad.h>
 #include <window.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+void update_window(window* window) {
+    glfwPollEvents();
+    glfwSwapBuffers(window->frame);
+}
 
 window* create_window(int width, int height, const char* title) {
 
@@ -25,6 +31,9 @@ window* create_window(int width, int height, const char* title) {
     }
 
     glfwMakeContextCurrent(m_window->frame);
+    glfwSetFramebufferSizeCallback(m_window->frame, framebuffer_size_callback);
+    glfwSetInputMode(m_window->frame, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+
     m_window->width = width;
     m_window->height = height;
     return m_window;
@@ -43,4 +52,7 @@ void close_window(window* window) {
 bool should_window_close(window* window) {
     return glfwWindowShouldClose(window->frame);
 }
-
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}

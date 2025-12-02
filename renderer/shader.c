@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <utility.h>
 
+void set_mat4(shader* shader, const char* name, mat4 value) {
+    int loc = glGetUniformLocation(shader->id, name);
+    if(loc == -1) printf("couldn't find: %s\n", name);
+    glUniformMatrix4fv(loc, 1, GL_FALSE, &value[0][0]);
+}
+
 shader* create_shader(char* vertex_shader_path, char* fragment_shader_path)
 {
     shader* m_shader = malloc(sizeof(shader));

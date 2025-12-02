@@ -15,6 +15,12 @@ scene* create_scene() {
 
     m_scene->shader = create_shader("../shaders/triangle.v", "../shaders/triangle.f");
 
+    vec3 cam_pos = {0.0f, 0.0f, 3.0f};
+    vec3 cam_up  = {0.0f, 1.0f, 0.0f};
+    m_scene->camera = create_camera(cam_pos, cam_up, -90.0f, 0.0f);
+
+    m_scene->input = create_input();
+
     m_scene->meshes = NULL;
     m_scene->mesh_count = 0;
 
@@ -43,8 +49,29 @@ void add_mesh(scene* s, mesh* m) {
     s->meshes[s->mesh_count++] = m;
 }
 
-void render_scene(scene* scene) {
+void render_scene(scene* scene, float delta_time) {
+    update_input(scene->input);
+
+    update_camera(scene->camera, delta_time, scene->input->keys, scene->input->mouseDeltaX, scene->input->mouseDeltaY);
+
+    clear_screen(scene->renderer);
     use_shader(scene->shader);
+
+    mat4 view;
+    glm_mat4_identity(view);
+    get_view_matrix(scene->camera, view);
+
+    mat4 projection;
+    glm_mat4_identity(projection);
+    get_projection_matrix(scene->camera, projection);
+
+    mat4 model;
+    glm_mat4_identity(model);
+
+    set_mat4(scene->shader, "view", view);
+    set_mat4(scene->shader, "projection", projection);
+    set_mat4(scene->shader, "model", model);
+
     for(size_t i = 0; i < scene->mesh_count; i++) {
         draw_mesh(scene->meshes[i]);
     }
@@ -56,7 +83,9 @@ void destroy_scene(scene* scene) {
     }
 
     free(scene->meshes);
+    destroy_camera(scene->camera);
     destroy_shader(scene->shader);
     destroy_renderer(scene->renderer);
+    destroy_input(scene->input);
     free(scene);
 }

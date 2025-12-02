@@ -2,17 +2,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <GLFW/glfw3.h>
+#include <time.h>
+
 
 void run_application(application* app) {
     while(!should_window_close(app->context->window)) {
+        Time_Update();
 
         if(glfwGetKey(app->context->window->frame, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             close_window(app->context->window);
 
-        clear_screen(app->context->scene->renderer);
-        render_scene(app->context->scene);
-        glfwPollEvents();
-        glfwSwapBuffers(app->context->window->frame);
+        render_scene(app->context->scene, GetDeltaTime());
+        update_window(app->context->window);
     }
 }
 

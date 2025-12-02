@@ -154,6 +154,30 @@ core/application.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/application.c.s
 .PHONY : core/application.c.s
 
+core/time.o: core/time.c.o
+.PHONY : core/time.o
+
+# target to build an object file
+core/time.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/time.c.o
+.PHONY : core/time.c.o
+
+core/time.i: core/time.c.i
+.PHONY : core/time.i
+
+# target to preprocess a source file
+core/time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/time.c.i
+.PHONY : core/time.c.i
+
+core/time.s: core/time.c.s
+.PHONY : core/time.s
+
+# target to generate assembly for a file
+core/time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/time.c.s
+.PHONY : core/time.c.s
+
 core/window.o: core/window.c.o
 .PHONY : core/window.o
 
@@ -177,6 +201,30 @@ core/window.s: core/window.c.s
 core/window.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/window.c.s
 .PHONY : core/window.c.s
+
+inputs/inputs.o: inputs/inputs.c.o
+.PHONY : inputs/inputs.o
+
+# target to build an object file
+inputs/inputs.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o
+.PHONY : inputs/inputs.c.o
+
+inputs/inputs.i: inputs/inputs.c.i
+.PHONY : inputs/inputs.i
+
+# target to preprocess a source file
+inputs/inputs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/inputs/inputs.c.i
+.PHONY : inputs/inputs.c.i
+
+inputs/inputs.s: inputs/inputs.c.s
+.PHONY : inputs/inputs.s
+
+# target to generate assembly for a file
+inputs/inputs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/inputs/inputs.c.s
+.PHONY : inputs/inputs.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -297,6 +345,30 @@ renderer/texture.s: renderer/texture.c.s
 renderer/texture.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/texture.c.s
 .PHONY : renderer/texture.c.s
+
+scene/camera.o: scene/camera.c.o
+.PHONY : scene/camera.o
+
+# target to build an object file
+scene/camera.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/camera.c.o
+.PHONY : scene/camera.c.o
+
+scene/camera.i: scene/camera.c.i
+.PHONY : scene/camera.i
+
+# target to preprocess a source file
+scene/camera.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/camera.c.i
+.PHONY : scene/camera.c.i
+
+scene/camera.s: scene/camera.c.s
+.PHONY : scene/camera.s
+
+# target to generate assembly for a file
+scene/camera.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/camera.c.s
+.PHONY : scene/camera.c.s
 
 scene/context.o: scene/context.c.o
 .PHONY : scene/context.o
@@ -454,9 +526,15 @@ help:
 	@echo "... core/application.o"
 	@echo "... core/application.i"
 	@echo "... core/application.s"
+	@echo "... core/time.o"
+	@echo "... core/time.i"
+	@echo "... core/time.s"
 	@echo "... core/window.o"
 	@echo "... core/window.i"
 	@echo "... core/window.s"
+	@echo "... inputs/inputs.o"
+	@echo "... inputs/inputs.i"
+	@echo "... inputs/inputs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -472,6 +550,9 @@ help:
 	@echo "... renderer/texture.o"
 	@echo "... renderer/texture.i"
 	@echo "... renderer/texture.s"
+	@echo "... scene/camera.o"
+	@echo "... scene/camera.i"
+	@echo "... scene/camera.s"
 	@echo "... scene/context.o"
 	@echo "... scene/context.i"
 	@echo "... scene/context.s"

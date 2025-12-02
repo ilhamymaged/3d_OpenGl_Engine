@@ -18,8 +18,10 @@ CMakeFiles/CMakeTarget.dir/renderer/shader.c.o: \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/cglm.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -45,8 +47,78 @@ CMakeFiles/CMakeTarget.dir/renderer/shader.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/x86.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/intrin.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec2.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/util.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec2-ext.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec4-ext.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec3-ext.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ivec2.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ivec3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ivec4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/mat4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/../../common.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/../intrin.h \
+ /usr/include/assert.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat4x2.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat4x3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/mat3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat3x2.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat3x4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat2.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/mat2.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat2x3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/mat2x4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine-mat.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/affine.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine-pre.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine-post.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/cam.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/plane.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/persp.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/../common.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/../plane.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/../mat4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/ortho_rh_no.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/persp_rh_no.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/persp.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/view_rh_no.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/view_rh.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/frustum.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/quat.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/sse2/quat.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/euler.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/handed/euler_to_quat_rh.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/handed/../common.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/noise.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/aabb2d.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/box.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/color.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/io.h \
+ /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -54,4 +126,15 @@ CMakeFiles/CMakeTarget.dir/renderer/shader.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/project.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/project_no.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/../vec3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/clipspace/../vec4.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/sphere.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ease.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/curve.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/bezier.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ray.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/utility/utility.h

@@ -142,6 +142,9 @@ CMakeFiles/CMakeTarget.dir/core/application.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/camera.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/time.h

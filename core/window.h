@@ -16,5 +16,7 @@ window* create_window(int width, int height, const char* title);
 bool should_window_close(window* window);
 void destroy_window(window* window);
 void close_window(window* window);
+void update_window(window* window);
 
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 #endif

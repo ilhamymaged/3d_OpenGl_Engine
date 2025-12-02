@@ -9,12 +9,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c" "CMakeFiles/CMakeTarget.dir/core/application.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/application.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/time.c" "CMakeFiles/CMakeTarget.dir/core/time.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/time.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.c" "CMakeFiles/CMakeTarget.dir/core/window.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/window.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.c" "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c" "CMakeFiles/CMakeTarget.dir/main.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/main.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.c" "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.c" "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.c" "CMakeFiles/CMakeTarget.dir/renderer/shader.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/shader.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.c" "CMakeFiles/CMakeTarget.dir/renderer/texture.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/texture.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/camera.c" "CMakeFiles/CMakeTarget.dir/scene/camera.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/scene/camera.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/context.c" "CMakeFiles/CMakeTarget.dir/scene/context.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/scene/context.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/scene.c" "CMakeFiles/CMakeTarget.dir/scene/scene.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/scene/scene.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/utility/utility.c" "CMakeFiles/CMakeTarget.dir/utility/utility.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/utility/utility.c.o.d"
