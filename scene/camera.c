@@ -1,6 +1,7 @@
 #include "camera.h"
 #include <stdlib.h>
 #include <cglm/cglm.h>
+#include <GLFW/glfw3.h>
 
 camera* create_camera(vec3 position, vec3 up, float yaw, float pitch) {
     camera* cam = malloc(sizeof(camera));
@@ -28,7 +29,7 @@ camera* create_camera(vec3 position, vec3 up, float yaw, float pitch) {
     return cam;
 }
 
-void update_camera(camera* cam, float deltaTime, const bool* keys, float mouseDeltaX, float mouseDeltaY) {
+void update_camera(camera* cam, float deltaTime, input* input, float mouseDeltaX, float mouseDeltaY) {
     if (!cam || !cam->active) return;
 
     // Mouse movement
@@ -52,26 +53,33 @@ void update_camera(camera* cam, float deltaTime, const bool* keys, float mouseDe
 
     // Keyboard movement
     float velocity = cam->speed * deltaTime;
-    if (keys[87]) { // W
+    if (is_key_pressed(input, GLFW_KEY_W)) { // W
         vec3 temp;
         glm_vec3_scale(cam->front, velocity, temp);
         glm_vec3_add(cam->position, temp, cam->position);
     }
-    if (keys[83]) { // S
+    if (is_key_pressed(input, GLFW_KEY_S)) { // S
         vec3 temp;
         glm_vec3_scale(cam->front, velocity, temp);
         glm_vec3_sub(cam->position, temp, cam->position);
     }
-    if (keys[65]) { // A
+    if (is_key_pressed(input, GLFW_KEY_A)) { // A
         vec3 temp;
         glm_vec3_scale(cam->right, velocity, temp);
         glm_vec3_sub(cam->position, temp, cam->position);
     }
-    if (keys[68]) { // D
+    if (is_key_pressed(input, GLFW_KEY_D)) { // D
         vec3 temp;
         glm_vec3_scale(cam->right, velocity, temp);
         glm_vec3_add(cam->position, temp, cam->position);
     }
+
+    if(is_key_pressed(input, GLFW_KEY_SPACE)) {
+        vec3 temp;
+        glm_vec3_scale(cam->up, velocity, temp);
+        glm_vec3_add(cam->position, temp, cam->position);
+    }
+
 }
 
 void get_view_matrix(camera* cam, mat4 view) {
@@ -79,7 +87,7 @@ void get_view_matrix(camera* cam, mat4 view) {
 }
 
 void get_projection_matrix(camera* cam, mat4 proj) {
-    glm_perspective(glm_rad(45.0f), (float)1280/720, 0.1f, 100.0f, proj);
+    glm_perspective(glm_rad(45.0f), (float)1600/900, 0.1f, 100.0f, proj);
 }
 
 void destroy_camera(camera* cam) {

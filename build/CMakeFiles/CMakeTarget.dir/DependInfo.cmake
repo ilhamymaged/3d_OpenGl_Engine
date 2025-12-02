@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/entity.c" "CMakeFiles/CMakeTarget.dir/ecs/entity.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/ecs/entity.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.c" "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c" "CMakeFiles/CMakeTarget.dir/main.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/main.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/assetsmanager.c" "CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.c" "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.c" "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.c" "CMakeFiles/CMakeTarget.dir/renderer/shader.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/shader.c.o.d"

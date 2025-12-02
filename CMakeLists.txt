@@ -1,6 +1,8 @@
 ﻿cmake_minimum_required (VERSION 3.10)
 project ("gameEngine")
 
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -g -O0")

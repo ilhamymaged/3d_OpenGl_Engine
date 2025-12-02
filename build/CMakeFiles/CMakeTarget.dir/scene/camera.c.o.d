@@ -134,4 +134,8 @@ CMakeFiles/CMakeTarget.dir/scene/camera.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/bezier.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ray.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/KHR/khrplatform.h

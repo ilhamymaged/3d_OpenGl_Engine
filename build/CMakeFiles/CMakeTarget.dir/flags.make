@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/editor -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/utility -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/entt -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glm -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/KHR -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/stb -I/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include -isystem /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include
 
-C_FLAGS = 
+C_FLAGS = -g -g -O0
 

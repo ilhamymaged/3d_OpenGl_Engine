@@ -39,6 +39,8 @@ renderer* create_renderer(vec4* background_color) {
         return NULL;
     }
 
+    glEnable(GL_DEPTH_TEST);
+
     m_renderer->background_color = background_color;
     return m_renderer;
 }

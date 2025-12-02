@@ -611,6 +611,9 @@ CMakeFiles/CMakeTarget.dir/main.c.o: ../main.c \
   ../vendor/glfw/include/GLFW/glfw3.h \
   ../core/window.h
 
+CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.o: ../renderer/assetsmanager.c \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o: ../renderer/mesh.c \
   /usr/include/stdc-predef.h \
   ../renderer/mesh.h \
@@ -1262,7 +1265,12 @@ CMakeFiles/CMakeTarget.dir/scene/camera.c.o: ../scene/camera.c \
   ../vendor/cglm/include/cglm/bezier.h \
   ../vendor/cglm/include/cglm/ray.h \
   ../vendor/cglm/include/cglm/affine2d.h \
-  ../vendor/cglm/include/cglm/affine2d-post.h
+  ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../inputs/inputs.h \
+  ../vendor/glfw/include/GLFW/glfw3.h \
+  /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
+  ../vendor/glad/include/KHR/khrplatform.h
 
 CMakeFiles/CMakeTarget.dir/scene/context.c.o: ../scene/context.c \
   /usr/include/stdc-predef.h \
@@ -2069,6 +2077,8 @@ CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.o: ../vendor/stb/stb_image.c \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+
+../renderer/assetsmanager.c:
 
 ../vendor/cglm/include/cglm/affine.h:
 

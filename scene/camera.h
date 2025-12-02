@@ -3,8 +3,7 @@
 
 #include <cglm/cglm.h>
 #include <stdbool.h>
-
-#define WORLD_UP 
+#include <inputs.h>
 
 typedef struct {
     vec3 position;
@@ -21,7 +20,7 @@ typedef struct {
 } camera;
 
 camera* create_camera(vec3 position, vec3 up, float yaw, float pitch);
-void update_camera(camera* cam, float deltaTime, const bool* keys, float mouseDeltaX, float mouseDeltaY);
+void update_camera(camera* cam, float deltaTime, input* input, float mouseDeltaX, float mouseDeltaY);
 void get_view_matrix(camera* cam, mat4 view);
 void get_projection_matrix(camera* cam, mat4 proj);
 void destroy_camera(camera* cam);

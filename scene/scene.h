@@ -12,6 +12,7 @@ typedef struct scene {
     camera* camera;
     input* input;
     entity_id entity;
+    entity_id cube;
 } scene;
 
 scene* create_scene();

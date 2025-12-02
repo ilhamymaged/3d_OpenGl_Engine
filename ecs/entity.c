@@ -1,5 +1,6 @@
 #include <entity.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 static transform transforms[MAX_ENTITIES];
 static renderable renderables[MAX_ENTITIES];
@@ -17,10 +18,12 @@ void add_component(entity_id e, component_type type, void* data) {
         case TRANSFORM:
             transforms[e] = *(transform*)data;
             has_transform[e] = true;
+            printf("added TRANSFORM to entity with id: %u\n", e);
             break;
         case RENDERABLE:
             renderables[e] = *(renderable*)data;
             has_renderer[e] = true;
+            printf("added RENDERABLE to entity with id: %u\n",  e);
             break;
     }
 }

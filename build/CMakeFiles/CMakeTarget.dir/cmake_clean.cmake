@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o.d"
   "CMakeFiles/CMakeTarget.dir/main.c.o"
   "CMakeFiles/CMakeTarget.dir/main.c.o.d"
+  "CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.o"
+  "CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.o.d"
   "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o"
   "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o.d"
   "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o"

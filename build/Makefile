@@ -274,6 +274,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/main.c.s
 .PHONY : main.c.s
 
+renderer/assetsmanager.o: renderer/assetsmanager.c.o
+.PHONY : renderer/assetsmanager.o
+
+# target to build an object file
+renderer/assetsmanager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.o
+.PHONY : renderer/assetsmanager.c.o
+
+renderer/assetsmanager.i: renderer/assetsmanager.c.i
+.PHONY : renderer/assetsmanager.i
+
+# target to preprocess a source file
+renderer/assetsmanager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.i
+.PHONY : renderer/assetsmanager.c.i
+
+renderer/assetsmanager.s: renderer/assetsmanager.c.s
+.PHONY : renderer/assetsmanager.s
+
+# target to generate assembly for a file
+renderer/assetsmanager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/assetsmanager.c.s
+.PHONY : renderer/assetsmanager.c.s
+
 renderer/mesh.o: renderer/mesh.c.o
 .PHONY : renderer/mesh.o
 
@@ -541,6 +565,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... renderer/assetsmanager.o"
+	@echo "... renderer/assetsmanager.i"
+	@echo "... renderer/assetsmanager.s"
 	@echo "... renderer/mesh.o"
 	@echo "... renderer/mesh.i"
 	@echo "... renderer/mesh.s"
