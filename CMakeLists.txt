@@ -12,9 +12,9 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS core/*.c renderer/*.c 
-    editor/*.c scene/*.c utility/*.c inputs/*.c)
+    editor/*.c scene/*.c utility/*.c inputs/*.c ecs/*.c)
 list(APPEND SRC_FILES main.c vendor/glad/src/glad.c
-vendor/stb/stb_image.c vendor/tiny_obj_loader/tiny_obj_loader.cpp)
+vendor/stb/stb_image.c)
 
 add_executable (CMakeTarget ${SRC_FILES})
 
@@ -25,12 +25,12 @@ target_include_directories(CMakeTarget PRIVATE
     renderer
     scene
     utility
+    ecs
     vendor/entt
     vendor/glm
     vendor/glad/include
     vendor/KHR
     vendor/stb
-    vendor/tiny_obj_loader
     vendor/glfw/include
     vendor/cglm/include
 )
@@ -40,7 +40,7 @@ set_target_properties(glfw3 PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/vendor/glfw/include"
 )
 
-target_link_libraries(CMakeTarget PRIVATE glfw3)
+target_link_libraries(CMakeTarget PRIVATE glfw3 m)
 
 if (WIN32)
     target_link_libraries(CMakeTarget PRIVATE opengl32)

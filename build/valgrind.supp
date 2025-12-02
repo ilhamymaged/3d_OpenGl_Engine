@@ -1,0 +1,12 @@
+{
+   ignore_glfw
+   Memcheck:Leak
+   fun:_glfw*
+}
+
+{
+   ignore_mesa
+   Memcheck:Leak
+   obj:/usr/lib*/libGL*.so*
+}
+

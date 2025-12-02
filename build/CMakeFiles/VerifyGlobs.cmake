@@ -15,6 +15,16 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # SRC_FILES at CMakeLists.txt:14 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/*.c")
+set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/entity.c"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SRC_FILES at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/editor/*.c")
 set(OLD_GLOB
   )

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c" "CMakeFiles/CMakeTarget.dir/core/application.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/application.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/time.c" "CMakeFiles/CMakeTarget.dir/core/time.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/time.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.c" "CMakeFiles/CMakeTarget.dir/core/window.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/core/window.c.o.d"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/entity.c" "CMakeFiles/CMakeTarget.dir/ecs/entity.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/ecs/entity.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.c" "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/inputs/inputs.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c" "CMakeFiles/CMakeTarget.dir/main.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/main.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.c" "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o.d"
@@ -23,7 +24,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/utility/utility.c" "CMakeFiles/CMakeTarget.dir/utility/utility.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/utility/utility.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/src/glad.c" "CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.o.d"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/stb/stb_image.c" "CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.o" "gcc" "CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.o.d"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/tiny_obj_loader/tiny_obj_loader.cpp" "CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o" "gcc" "CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o.d"
   )
 
 # Targets to which this target links.

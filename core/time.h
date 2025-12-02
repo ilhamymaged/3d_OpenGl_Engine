@@ -1,7 +1,7 @@
 #ifndef TIME_H
 #define TIME_H
 
-float GetDeltaTime();
-void Time_Update();
+float get_delta_time();
+void tick();
 
 #endif

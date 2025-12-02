@@ -21,9 +21,6 @@ scene* create_scene() {
 
     m_scene->input = create_input();
 
-    m_scene->meshes = NULL;
-    m_scene->mesh_count = 0;
-
     vertex triangle_vertices[] = {
         { { 0.0f,  0.5f, 0.0f },  { 0.0f, 0.0f, 1.0f }, { 0.5f, 1.0f } },
         { {-0.5f, -0.5f, 0.0f },  { 0.0f, 0.0f, 1.0f }, { 0.0f, 0.0f } },
@@ -38,22 +35,38 @@ scene* create_scene() {
             triangle_vertices, 3,
             triangle_indices,  3,
             tex
-            );
+    );
 
-    add_mesh(m_scene, triangle_mesh);
+    m_scene->entity = create_entity();
+    transform t = {
+        .pos = {0.0f, 0.0f, 0.0f},
+        .rot = {0, 0, 0},
+        .scale = {1, 1, 1}
+    };
+
+    renderable r = {
+        .mesh = triangle_mesh
+    };
+
+    add_component(m_scene->entity, TRANSFORM, &t);
+    add_component(m_scene->entity, RENDERABLE, &r);
     return m_scene;
 }
 
-void add_mesh(scene* s, mesh* m) {
-    s->meshes = realloc(s->meshes, sizeof(mesh*) * (s->mesh_count + 1));
-    s->meshes[s->mesh_count++] = m;
-}
-
-void render_scene(scene* scene, float delta_time) {
+void update_scene(scene* scene, float delta_time) {
     update_input(scene->input);
 
-    update_camera(scene->camera, delta_time, scene->input->keys, scene->input->mouseDeltaX, scene->input->mouseDeltaY);
+    update_camera(scene->camera, delta_time, scene->input->keys, 
+            scene->input->mouseDeltaX, scene->input->mouseDeltaY);
 
+    //transform* t = get_component(scene->entity, TRANSFORM);
+    //if(is_key_pressed(scene->input, RIGHT_KEY)) {
+     //   vec3 v = {1.0f, 0.0f, 0.0f};
+      //  glm_vec3_add(v, t->pos, t->pos);
+    //}
+}
+
+void render_scene(scene* scene) {
     clear_screen(scene->renderer);
     use_shader(scene->shader);
 
@@ -65,27 +78,26 @@ void render_scene(scene* scene, float delta_time) {
     glm_mat4_identity(projection);
     get_projection_matrix(scene->camera, projection);
 
+    transform* t = get_component(scene->entity, TRANSFORM);
+    renderable* r = get_component(scene->entity, RENDERABLE);
+
     mat4 model;
     glm_mat4_identity(model);
+    glm_translate(model, t->pos);
 
-    set_mat4(scene->shader, "view", view);
-    set_mat4(scene->shader, "projection", projection);
     set_mat4(scene->shader, "model", model);
 
-    for(size_t i = 0; i < scene->mesh_count; i++) {
-        draw_mesh(scene->meshes[i]);
-    }
+    draw_mesh(r->mesh);
+    //draw_entity(scene->entity, scene->shader);
 }
 
 void destroy_scene(scene* scene) {
-    for (size_t i = 0; i < scene->mesh_count; i++) {
-        destroy_mesh(scene->meshes[i]);
-    }
-
-    free(scene->meshes);
+    renderable* r = get_component(scene->entity, RENDERABLE);
+    destroy_mesh(r->mesh);
     destroy_camera(scene->camera);
     destroy_shader(scene->shader);
     destroy_renderer(scene->renderer);
     destroy_input(scene->input);
+
     free(scene);
 }

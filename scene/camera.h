@@ -4,6 +4,8 @@
 #include <cglm/cglm.h>
 #include <stdbool.h>
 
+#define WORLD_UP 
+
 typedef struct {
     vec3 position;
     vec3 front;

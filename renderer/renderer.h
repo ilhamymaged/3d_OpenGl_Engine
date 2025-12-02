@@ -3,6 +3,8 @@
 
 #include <glad/glad.h>
 #include <cglm/cglm.h>
+#include <entity.h>
+#include <shader.h>
 #include <mesh.h>
 
 typedef struct renderer {
@@ -14,5 +16,6 @@ void destroy_renderer(renderer* renderer);
 void clear_screen(renderer* renderer);
 
 void draw_mesh(mesh* mesh);
+void draw_entity(entity_id e, shader* shader);
 
 #endif

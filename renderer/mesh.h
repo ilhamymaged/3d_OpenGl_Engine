@@ -1,3 +1,6 @@
+#ifndef MESH
+#define MESH
+
 #include <cglm/cglm.h>
 #include <texture.h>
 
@@ -22,3 +25,4 @@ mesh* create_mesh(vertex* vertices, size_t vertices_count,
         texture* texture);
 void destroy_mesh(mesh* mesh);
 
+#endif

@@ -1,3 +1,6 @@
+#ifndef SHADER
+#define SHADER
+
 #include <glad/glad.h>
 #include <cglm/cglm.h>
 
@@ -10,3 +13,6 @@ void destroy_shader(shader* shader);
 void use_shader(shader* shader);
 
 void set_mat4(shader* shader, const char* name, mat4 value);
+
+#endif
+

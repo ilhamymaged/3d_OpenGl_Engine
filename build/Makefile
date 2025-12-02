@@ -202,6 +202,30 @@ core/window.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/window.c.s
 .PHONY : core/window.c.s
 
+ecs/entity.o: ecs/entity.c.o
+.PHONY : ecs/entity.o
+
+# target to build an object file
+ecs/entity.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/ecs/entity.c.o
+.PHONY : ecs/entity.c.o
+
+ecs/entity.i: ecs/entity.c.i
+.PHONY : ecs/entity.i
+
+# target to preprocess a source file
+ecs/entity.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/ecs/entity.c.i
+.PHONY : ecs/entity.c.i
+
+ecs/entity.s: ecs/entity.c.s
+.PHONY : ecs/entity.s
+
+# target to generate assembly for a file
+ecs/entity.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/ecs/entity.c.s
+.PHONY : ecs/entity.c.s
+
 inputs/inputs.o: inputs/inputs.c.o
 .PHONY : inputs/inputs.o
 
@@ -490,30 +514,6 @@ vendor/stb/stb_image.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/stb/stb_image.c.s
 .PHONY : vendor/stb/stb_image.c.s
 
-vendor/tiny_obj_loader/tiny_obj_loader.o: vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
-.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.o
-
-# target to build an object file
-vendor/tiny_obj_loader/tiny_obj_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
-.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.cpp.o
-
-vendor/tiny_obj_loader/tiny_obj_loader.i: vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
-.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.i
-
-# target to preprocess a source file
-vendor/tiny_obj_loader/tiny_obj_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
-.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.cpp.i
-
-vendor/tiny_obj_loader/tiny_obj_loader.s: vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
-.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.s
-
-# target to generate assembly for a file
-vendor/tiny_obj_loader/tiny_obj_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
-.PHONY : vendor/tiny_obj_loader/tiny_obj_loader.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -532,6 +532,9 @@ help:
 	@echo "... core/window.o"
 	@echo "... core/window.i"
 	@echo "... core/window.s"
+	@echo "... ecs/entity.o"
+	@echo "... ecs/entity.i"
+	@echo "... ecs/entity.s"
 	@echo "... inputs/inputs.o"
 	@echo "... inputs/inputs.i"
 	@echo "... inputs/inputs.s"
@@ -568,9 +571,6 @@ help:
 	@echo "... vendor/stb/stb_image.o"
 	@echo "... vendor/stb/stb_image.i"
 	@echo "... vendor/stb/stb_image.s"
-	@echo "... vendor/tiny_obj_loader/tiny_obj_loader.o"
-	@echo "... vendor/tiny_obj_loader/tiny_obj_loader.i"
-	@echo "... vendor/tiny_obj_loader/tiny_obj_loader.s"
 .PHONY : help
 
 

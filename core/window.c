@@ -34,6 +34,8 @@ window* create_window(int width, int height, const char* title) {
     glfwSetFramebufferSizeCallback(m_window->frame, framebuffer_size_callback);
     glfwSetInputMode(m_window->frame, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
+    glEnable(GL_DEPTH_TEST);
+
     m_window->width = width;
     m_window->height = height;
     return m_window;

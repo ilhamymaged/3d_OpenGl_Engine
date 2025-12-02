@@ -1,12 +1,10 @@
-CMakeFiles/CMakeTarget.dir/main.c.o: \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/main.c \
+CMakeFiles/CMakeTarget.dir/ecs/entity.c.o: \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/entity.c \
  /usr/include/stdc-predef.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/context.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/scene.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/glad/glad.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/KHR/khrplatform.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/entity.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/component.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/cglm.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -22,8 +20,6 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/cglm.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -140,12 +136,5 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ray.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/entity.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/ecs/component.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/camera.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.h
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.h
