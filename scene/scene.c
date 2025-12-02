@@ -78,17 +78,7 @@ void render_scene(scene* scene) {
     glm_mat4_identity(projection);
     get_projection_matrix(scene->camera, projection);
 
-    transform* t = get_component(scene->entity, TRANSFORM);
-    renderable* r = get_component(scene->entity, RENDERABLE);
-
-    mat4 model;
-    glm_mat4_identity(model);
-    glm_translate(model, t->pos);
-
-    set_mat4(scene->shader, "model", model);
-
-    draw_mesh(r->mesh);
-    //draw_entity(scene->entity, scene->shader);
+    draw_entity(scene->entity, scene->shader);
 }
 
 void destroy_scene(scene* scene) {
