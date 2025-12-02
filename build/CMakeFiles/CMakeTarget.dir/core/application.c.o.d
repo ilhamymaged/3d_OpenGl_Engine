@@ -2,7 +2,8 @@ CMakeFiles/CMakeTarget.dir/core/application.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c \
  /usr/include/stdc-predef.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.h \
- /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/context.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/context.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/scene.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/glad/glad.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/KHR/khrplatform.h \
@@ -139,5 +140,8 @@ CMakeFiles/CMakeTarget.dir/core/application.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ray.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h

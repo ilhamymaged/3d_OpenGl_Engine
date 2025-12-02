@@ -6,7 +6,6 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/*.c")
 set(OLD_GLOB
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/application.c"
-  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/context.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -26,7 +25,10 @@ endif()
 # SRC_FILES at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/*.c")
 set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -36,6 +38,18 @@ endif()
 # SRC_FILES at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/*.c")
 set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/context.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/scene.c"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/build/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SRC_FILES at CMakeLists.txt:14 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/utility/*.c")
+set(OLD_GLOB
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/utility/utility.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

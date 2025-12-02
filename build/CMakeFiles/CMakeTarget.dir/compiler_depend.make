@@ -4,11 +4,11 @@
 CMakeFiles/CMakeTarget.dir/core/application.c.o: ../core/application.c \
   /usr/include/stdc-predef.h \
   ../core/application.h \
-  ../core/context.h \
-  ../core/window.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  ../vendor/glfw/include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  ../scene/context.h \
+  ../scene/scene.h \
+  ../renderer/renderer.h \
+  ../vendor/glad/include/glad/glad.h \
+  ../vendor/glad/include/KHR/khrplatform.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -26,13 +26,9 @@ CMakeFiles/CMakeTarget.dir/core/application.c.o: ../core/application.c \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  ../vendor/glad/include/KHR/khrplatform.h \
-  ../renderer/renderer.h \
-  ../vendor/glad/include/glad/glad.h \
   ../vendor/cglm/include/cglm/cglm.h \
   ../vendor/cglm/include/cglm/common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -71,6 +67,7 @@ CMakeFiles/CMakeTarget.dir/core/application.c.o: ../core/application.c \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   ../vendor/cglm/include/cglm/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
   ../vendor/cglm/include/cglm/simd/intrin.h \
@@ -151,64 +148,12 @@ CMakeFiles/CMakeTarget.dir/core/application.c.o: ../core/application.c \
   ../vendor/cglm/include/cglm/bezier.h \
   ../vendor/cglm/include/cglm/ray.h \
   ../vendor/cglm/include/cglm/affine2d.h \
-  ../vendor/cglm/include/cglm/affine2d-post.h
-
-CMakeFiles/CMakeTarget.dir/core/context.c.o: ../core/context.c \
-  /usr/include/stdc-predef.h \
-  ../core/context.h \
+  ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../renderer/mesh.h \
+  ../renderer/texture.h \
+  ../renderer/shader.h \
   ../core/window.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  ../vendor/glfw/include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  ../vendor/glad/include/KHR/khrplatform.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  ../vendor/glfw/include/GLFW/glfw3.h
 
 CMakeFiles/CMakeTarget.dir/core/window.c.o: ../core/window.c \
   /usr/include/stdc-predef.h \
@@ -278,11 +223,11 @@ CMakeFiles/CMakeTarget.dir/core/window.c.o: ../core/window.c \
 CMakeFiles/CMakeTarget.dir/main.c.o: ../main.c \
   /usr/include/stdc-predef.h \
   ../core/application.h \
-  ../core/context.h \
-  ../core/window.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  ../vendor/glfw/include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  ../scene/context.h \
+  ../scene/scene.h \
+  ../renderer/renderer.h \
+  ../vendor/glad/include/glad/glad.h \
+  ../vendor/glad/include/KHR/khrplatform.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -300,8 +245,280 @@ CMakeFiles/CMakeTarget.dir/main.c.o: ../main.c \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
+  ../vendor/cglm/include/cglm/cglm.h \
+  ../vendor/cglm/include/cglm/common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  ../vendor/cglm/include/cglm/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  ../vendor/cglm/include/cglm/simd/x86.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  ../vendor/cglm/include/cglm/vec2.h \
+  ../vendor/cglm/include/cglm/util.h \
+  ../vendor/cglm/include/cglm/vec2-ext.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/vec4-ext.h \
+  ../vendor/cglm/include/cglm/vec3-ext.h \
+  ../vendor/cglm/include/cglm/ivec2.h \
+  ../vendor/cglm/include/cglm/ivec3.h \
+  ../vendor/cglm/include/cglm/ivec4.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat4.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/include/assert.h \
+  ../vendor/cglm/include/cglm/mat4x2.h \
+  ../vendor/cglm/include/cglm/mat4x3.h \
+  ../vendor/cglm/include/cglm/mat3.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat3.h \
+  ../vendor/cglm/include/cglm/mat3x2.h \
+  ../vendor/cglm/include/cglm/mat3x4.h \
+  ../vendor/cglm/include/cglm/mat2.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat2.h \
+  ../vendor/cglm/include/cglm/mat2x3.h \
+  ../vendor/cglm/include/cglm/mat2x4.h \
+  ../vendor/cglm/include/cglm/affine.h \
+  ../vendor/cglm/include/cglm/affine-mat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/affine.h \
+  ../vendor/cglm/include/cglm/affine-pre.h \
+  ../vendor/cglm/include/cglm/affine-post.h \
+  ../vendor/cglm/include/cglm/cam.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/clipspace/ortho_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh.h \
+  ../vendor/cglm/include/cglm/frustum.h \
+  ../vendor/cglm/include/cglm/quat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/quat.h \
+  ../vendor/cglm/include/cglm/euler.h \
+  ../vendor/cglm/include/cglm/handed/euler_to_quat_rh.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/noise.h \
+  ../vendor/cglm/include/cglm/aabb2d.h \
+  ../vendor/cglm/include/cglm/box.h \
+  ../vendor/cglm/include/cglm/color.h \
+  ../vendor/cglm/include/cglm/io.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  ../vendor/cglm/include/cglm/project.h \
+  ../vendor/cglm/include/cglm/clipspace/project_no.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/sphere.h \
+  ../vendor/cglm/include/cglm/ease.h \
+  ../vendor/cglm/include/cglm/curve.h \
+  ../vendor/cglm/include/cglm/bezier.h \
+  ../vendor/cglm/include/cglm/ray.h \
+  ../vendor/cglm/include/cglm/affine2d.h \
+  ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../renderer/mesh.h \
+  ../renderer/texture.h \
+  ../renderer/shader.h \
+  ../core/window.h \
+  ../vendor/glfw/include/GLFW/glfw3.h
+
+CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o: ../renderer/mesh.c \
+  /usr/include/stdc-predef.h \
+  ../renderer/mesh.h \
+  ../vendor/cglm/include/cglm/cglm.h \
+  ../vendor/cglm/include/cglm/common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  ../vendor/cglm/include/cglm/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  ../vendor/cglm/include/cglm/simd/x86.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  ../vendor/cglm/include/cglm/vec2.h \
+  ../vendor/cglm/include/cglm/util.h \
+  ../vendor/cglm/include/cglm/vec2-ext.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/vec4-ext.h \
+  ../vendor/cglm/include/cglm/vec3-ext.h \
+  ../vendor/cglm/include/cglm/ivec2.h \
+  ../vendor/cglm/include/cglm/ivec3.h \
+  ../vendor/cglm/include/cglm/ivec4.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat4.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/include/assert.h \
+  ../vendor/cglm/include/cglm/mat4x2.h \
+  ../vendor/cglm/include/cglm/mat4x3.h \
+  ../vendor/cglm/include/cglm/mat3.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat3.h \
+  ../vendor/cglm/include/cglm/mat3x2.h \
+  ../vendor/cglm/include/cglm/mat3x4.h \
+  ../vendor/cglm/include/cglm/mat2.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat2.h \
+  ../vendor/cglm/include/cglm/mat2x3.h \
+  ../vendor/cglm/include/cglm/mat2x4.h \
+  ../vendor/cglm/include/cglm/affine.h \
+  ../vendor/cglm/include/cglm/affine-mat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/affine.h \
+  ../vendor/cglm/include/cglm/affine-pre.h \
+  ../vendor/cglm/include/cglm/affine-post.h \
+  ../vendor/cglm/include/cglm/cam.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/clipspace/ortho_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh.h \
+  ../vendor/cglm/include/cglm/frustum.h \
+  ../vendor/cglm/include/cglm/quat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/quat.h \
+  ../vendor/cglm/include/cglm/euler.h \
+  ../vendor/cglm/include/cglm/handed/euler_to_quat_rh.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/noise.h \
+  ../vendor/cglm/include/cglm/aabb2d.h \
+  ../vendor/cglm/include/cglm/box.h \
+  ../vendor/cglm/include/cglm/color.h \
+  ../vendor/cglm/include/cglm/io.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  ../vendor/cglm/include/cglm/project.h \
+  ../vendor/cglm/include/cglm/clipspace/project_no.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/sphere.h \
+  ../vendor/cglm/include/cglm/ease.h \
+  ../vendor/cglm/include/cglm/curve.h \
+  ../vendor/cglm/include/cglm/bezier.h \
+  ../vendor/cglm/include/cglm/ray.h \
+  ../vendor/cglm/include/cglm/affine2d.h \
+  ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../renderer/texture.h \
+  ../vendor/glad/include/glad/glad.h \
   ../vendor/glad/include/KHR/khrplatform.h
 
 CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o: ../renderer/renderer.c \
@@ -449,7 +666,494 @@ CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o: ../renderer/renderer.c \
   ../vendor/cglm/include/cglm/ray.h \
   ../vendor/cglm/include/cglm/affine2d.h \
   ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../renderer/mesh.h \
+  ../renderer/texture.h \
   ../vendor/glfw/include/GLFW/glfw3.h
+
+CMakeFiles/CMakeTarget.dir/renderer/shader.c.o: ../renderer/shader.c \
+  /usr/include/stdc-predef.h \
+  ../renderer/shader.h \
+  ../vendor/glad/include/glad/glad.h \
+  ../vendor/glad/include/KHR/khrplatform.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/stdlib.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  ../utility/utility.h
+
+CMakeFiles/CMakeTarget.dir/renderer/texture.c.o: ../renderer/texture.c \
+  /usr/include/stdc-predef.h \
+  ../vendor/glad/include/glad/glad.h \
+  ../vendor/glad/include/KHR/khrplatform.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  ../renderer/texture.h \
+  ../vendor/stb/stb_image.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+
+CMakeFiles/CMakeTarget.dir/scene/context.c.o: ../scene/context.c \
+  /usr/include/stdc-predef.h \
+  ../scene/context.h \
+  ../scene/scene.h \
+  ../renderer/renderer.h \
+  ../vendor/glad/include/glad/glad.h \
+  ../vendor/glad/include/KHR/khrplatform.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  ../vendor/cglm/include/cglm/cglm.h \
+  ../vendor/cglm/include/cglm/common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  ../vendor/cglm/include/cglm/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  ../vendor/cglm/include/cglm/simd/x86.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  ../vendor/cglm/include/cglm/vec2.h \
+  ../vendor/cglm/include/cglm/util.h \
+  ../vendor/cglm/include/cglm/vec2-ext.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/vec4-ext.h \
+  ../vendor/cglm/include/cglm/vec3-ext.h \
+  ../vendor/cglm/include/cglm/ivec2.h \
+  ../vendor/cglm/include/cglm/ivec3.h \
+  ../vendor/cglm/include/cglm/ivec4.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat4.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/include/assert.h \
+  ../vendor/cglm/include/cglm/mat4x2.h \
+  ../vendor/cglm/include/cglm/mat4x3.h \
+  ../vendor/cglm/include/cglm/mat3.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat3.h \
+  ../vendor/cglm/include/cglm/mat3x2.h \
+  ../vendor/cglm/include/cglm/mat3x4.h \
+  ../vendor/cglm/include/cglm/mat2.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat2.h \
+  ../vendor/cglm/include/cglm/mat2x3.h \
+  ../vendor/cglm/include/cglm/mat2x4.h \
+  ../vendor/cglm/include/cglm/affine.h \
+  ../vendor/cglm/include/cglm/affine-mat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/affine.h \
+  ../vendor/cglm/include/cglm/affine-pre.h \
+  ../vendor/cglm/include/cglm/affine-post.h \
+  ../vendor/cglm/include/cglm/cam.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/clipspace/ortho_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh.h \
+  ../vendor/cglm/include/cglm/frustum.h \
+  ../vendor/cglm/include/cglm/quat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/quat.h \
+  ../vendor/cglm/include/cglm/euler.h \
+  ../vendor/cglm/include/cglm/handed/euler_to_quat_rh.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/noise.h \
+  ../vendor/cglm/include/cglm/aabb2d.h \
+  ../vendor/cglm/include/cglm/box.h \
+  ../vendor/cglm/include/cglm/color.h \
+  ../vendor/cglm/include/cglm/io.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  ../vendor/cglm/include/cglm/project.h \
+  ../vendor/cglm/include/cglm/clipspace/project_no.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/sphere.h \
+  ../vendor/cglm/include/cglm/ease.h \
+  ../vendor/cglm/include/cglm/curve.h \
+  ../vendor/cglm/include/cglm/bezier.h \
+  ../vendor/cglm/include/cglm/ray.h \
+  ../vendor/cglm/include/cglm/affine2d.h \
+  ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../renderer/mesh.h \
+  ../renderer/texture.h \
+  ../renderer/shader.h \
+  ../core/window.h \
+  ../vendor/glfw/include/GLFW/glfw3.h
+
+CMakeFiles/CMakeTarget.dir/scene/scene.c.o: ../scene/scene.c \
+  /usr/include/stdc-predef.h \
+  ../scene/scene.h \
+  ../renderer/renderer.h \
+  ../vendor/glad/include/glad/glad.h \
+  ../vendor/glad/include/KHR/khrplatform.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  ../vendor/cglm/include/cglm/cglm.h \
+  ../vendor/cglm/include/cglm/common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  ../vendor/cglm/include/cglm/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  ../vendor/cglm/include/cglm/simd/x86.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  ../vendor/cglm/include/cglm/vec2.h \
+  ../vendor/cglm/include/cglm/util.h \
+  ../vendor/cglm/include/cglm/vec2-ext.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/vec4-ext.h \
+  ../vendor/cglm/include/cglm/vec3-ext.h \
+  ../vendor/cglm/include/cglm/ivec2.h \
+  ../vendor/cglm/include/cglm/ivec3.h \
+  ../vendor/cglm/include/cglm/ivec4.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat4.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/simd/intrin.h \
+  /usr/include/assert.h \
+  ../vendor/cglm/include/cglm/mat4x2.h \
+  ../vendor/cglm/include/cglm/mat4x3.h \
+  ../vendor/cglm/include/cglm/mat3.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat3.h \
+  ../vendor/cglm/include/cglm/mat3x2.h \
+  ../vendor/cglm/include/cglm/mat3x4.h \
+  ../vendor/cglm/include/cglm/mat2.h \
+  ../vendor/cglm/include/cglm/simd/sse2/mat2.h \
+  ../vendor/cglm/include/cglm/mat2x3.h \
+  ../vendor/cglm/include/cglm/mat2x4.h \
+  ../vendor/cglm/include/cglm/affine.h \
+  ../vendor/cglm/include/cglm/affine-mat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/affine.h \
+  ../vendor/cglm/include/cglm/affine-pre.h \
+  ../vendor/cglm/include/cglm/affine-post.h \
+  ../vendor/cglm/include/cglm/cam.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/plane.h \
+  ../vendor/cglm/include/cglm/mat4.h \
+  ../vendor/cglm/include/cglm/clipspace/ortho_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/persp.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh_no.h \
+  ../vendor/cglm/include/cglm/clipspace/view_rh.h \
+  ../vendor/cglm/include/cglm/frustum.h \
+  ../vendor/cglm/include/cglm/quat.h \
+  ../vendor/cglm/include/cglm/simd/sse2/quat.h \
+  ../vendor/cglm/include/cglm/euler.h \
+  ../vendor/cglm/include/cglm/handed/euler_to_quat_rh.h \
+  ../vendor/cglm/include/cglm/common.h \
+  ../vendor/cglm/include/cglm/noise.h \
+  ../vendor/cglm/include/cglm/aabb2d.h \
+  ../vendor/cglm/include/cglm/box.h \
+  ../vendor/cglm/include/cglm/color.h \
+  ../vendor/cglm/include/cglm/io.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  ../vendor/cglm/include/cglm/project.h \
+  ../vendor/cglm/include/cglm/clipspace/project_no.h \
+  ../vendor/cglm/include/cglm/vec3.h \
+  ../vendor/cglm/include/cglm/vec4.h \
+  ../vendor/cglm/include/cglm/sphere.h \
+  ../vendor/cglm/include/cglm/ease.h \
+  ../vendor/cglm/include/cglm/curve.h \
+  ../vendor/cglm/include/cglm/bezier.h \
+  ../vendor/cglm/include/cglm/ray.h \
+  ../vendor/cglm/include/cglm/affine2d.h \
+  ../vendor/cglm/include/cglm/affine2d-post.h \
+  ../renderer/mesh.h \
+  ../renderer/texture.h \
+  ../renderer/shader.h
+
+CMakeFiles/CMakeTarget.dir/utility/utility.c.o: ../utility/utility.c \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  ../utility/utility.h
 
 CMakeFiles/CMakeTarget.dir/vendor/glad/src/glad.c.o: ../vendor/glad/src/glad.c \
   /usr/include/stdc-predef.h \
@@ -937,6 +1641,28 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
+/usr/include/c++/11/cstdio:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/c++/11/bits/functional_hash.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+../scene/scene.h:
+
+/usr/include/c++/11/typeinfo:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
 /usr/include/c++/11/string:
 
 ../vendor/cglm/include/cglm/quat.h:
@@ -948,8 +1674,6 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 ../vendor/cglm/include/cglm/clipspace/view_rh.h:
 
 ../vendor/cglm/include/cglm/clipspace/view_rh_no.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 ../vendor/cglm/include/cglm/clipspace/persp_rh_no.h:
 
@@ -969,11 +1693,19 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/11/cstdlib:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 ../vendor/cglm/include/cglm/simd/sse2/mat4.h:
+
+/usr/include/c++/11/cstddef:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+../vendor/cglm/include/cglm/cam.h:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+../vendor/cglm/include/cglm/vec3-ext.h:
 
 ../vendor/cglm/include/cglm/vec4-ext.h:
 
@@ -981,25 +1713,15 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 ../vendor/cglm/include/cglm/simd/x86.h:
 
-../vendor/cglm/include/cglm/vec2.h:
+../scene/context.c:
 
-/usr/include/c++/11/bits/functional_hash.h:
+../vendor/cglm/include/cglm/vec2.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
 /usr/include/c++/11/system_error:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/stdio.h:
-
-../vendor/glad/include/KHR/khrplatform.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-../vendor/cglm/include/cglm/simd/intrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 ../vendor/cglm/include/cglm/affine.h:
 
@@ -1011,9 +1733,9 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
-
 ../vendor/cglm/include/cglm/color.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
 ../vendor/cglm/include/cglm/project.h:
 
@@ -1027,65 +1749,25 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-../renderer/renderer.h:
-
-/usr/include/c++/11/cstddef:
-
-/usr/include/c++/11/bits/stl_vector.h:
-
-../vendor/cglm/include/cglm/cam.h:
-
-/usr/include/c++/11/pstl/pstl_config.h:
-
-../vendor/cglm/include/cglm/vec3-ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-../vendor/cglm/include/cglm/mat3.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-../vendor/glad/include/glad/glad.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/11/tr1/gamma.tcc:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-../vendor/cglm/include/cglm/clipspace/persp.h:
-
-../vendor/cglm/include/cglm/simd/sse2/affine.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-../vendor/cglm/include/cglm/mat3x4.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+../vendor/cglm/include/cglm/cglm.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
+/usr/include/stdio.h:
+
+../vendor/glad/include/KHR/khrplatform.h:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+../vendor/cglm/include/cglm/simd/intrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/alloca.h:
 
 /usr/include/wctype.h:
 
@@ -1121,37 +1803,49 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-../core/context.h:
-
-/usr/include/errno.h:
-
-../vendor/cglm/include/cglm/simd/sse2/mat2.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-../vendor/cglm/include/cglm/mat3x2.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/c++/11/typeinfo:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/c++/11/bits/node_handle.h:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-../core/window.h:
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+../renderer/renderer.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+../renderer/texture.h:
+
+../vendor/glad/include/glad/glad.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/11/tr1/gamma.tcc:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+../vendor/cglm/include/cglm/clipspace/persp.h:
+
+../vendor/cglm/include/cglm/simd/sse2/affine.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+../vendor/cglm/include/cglm/mat3x4.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/11/backward/binders.h:
+
+../utility/utility.h:
 
 ../vendor/cglm/include/cglm/vec3.h:
 
@@ -1159,39 +1853,47 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+../vendor/cglm/include/cglm/mat3x2.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/usr/include/stdlib.h:
 
-/usr/include/GL/glext.h:
+/usr/include/errno.h:
 
-../vendor/cglm/include/cglm/ivec2.h:
+../vendor/cglm/include/cglm/simd/sse2/mat2.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/c++/11/bits/functexcept.h:
 
-../vendor/cglm/include/cglm/clipspace/ortho_rh_no.h:
+../vendor/cglm/include/cglm/common.h:
 
-../vendor/glfw/include/GLFW/glfw3.h:
+/usr/include/c++/11/ext/numeric_traits.h:
+
+../vendor/cglm/include/cglm/mat3.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/c++/11/cstring:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
-
-../vendor/cglm/include/cglm/cglm.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-../vendor/cglm/include/cglm/common.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
 
 ../vendor/cglm/include/cglm/simd/sse2/mat3.h:
 
@@ -1202,6 +1904,8 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/11/bits/istream.tcc:
+
+../scene/context.h:
 
 ../vendor/cglm/include/cglm/util.h:
 
@@ -1221,6 +1925,14 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+../vendor/cglm/include/cglm/ivec2.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/GL/glext.h:
+
 /usr/include/c++/11/cwchar:
 
 ../vendor/cglm/include/cglm/plane.h:
@@ -1228,6 +1940,8 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 ../core/window.c:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -1247,13 +1961,11 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/11/cstring:
+/usr/include/c++/11/bits/hash_bytes.h:
 
-/usr/include/math.h:
+/usr/include/c++/11/bits/move.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/11/string_view:
 
@@ -1295,13 +2007,39 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/c++/11/cctype:
 
-../core/context.c:
+../renderer/mesh.h:
+
+../vendor/cglm/include/cglm/mat4.h:
+
+../vendor/tiny_obj_loader/tiny_obj_loader.cpp:
+
+../renderer/shader.h:
+
+../core/window.h:
+
+../vendor/cglm/include/cglm/clipspace/ortho_rh_no.h:
+
+../vendor/glfw/include/GLFW/glfw3.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+../renderer/mesh.c:
 
 /usr/include/c++/11/cmath:
 
 /usr/include/c++/11/bits/allocator.h:
 
 ../renderer/renderer.c:
+
+../renderer/shader.c:
+
+../utility/utility.c:
+
+../renderer/texture.c:
 
 ../vendor/glad/src/glad.c:
 
@@ -1327,15 +2065,9 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h:
 
-../vendor/cglm/include/cglm/mat4.h:
-
-../vendor/tiny_obj_loader/tiny_obj_loader.cpp:
-
 /usr/include/strings.h:
 
 ../vendor/tiny_obj_loader/tiny_obj_loader.h:
-
-/usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/c++/11/map:
 
@@ -1413,7 +2145,13 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
+../scene/scene.c:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
@@ -1477,10 +2215,6 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -1496,13 +2230,3 @@ CMakeFiles/CMakeTarget.dir/vendor/tiny_obj_loader/tiny_obj_loader.cpp.o: ../vend
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/11/bits/move.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/c++/11/cstdio:

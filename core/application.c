@@ -3,17 +3,22 @@
 #include <stdio.h>
 #include <GLFW/glfw3.h>
 
-void run_application(Application* app) {
+void run_application(application* app) {
     while(!should_window_close(app->context->window)) {
-        clear_screen(app->context->renderer);
+
+        if(glfwGetKey(app->context->window->frame, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+            close_window(app->context->window);
+
+        clear_screen(app->context->scene->renderer);
+        render_scene(app->context->scene);
         glfwPollEvents();
         glfwSwapBuffers(app->context->window->frame);
     }
 }
 
-Application* create_application(int width, int height, const char* title) {
+application* create_application(int width, int height, const char* title) {
 
-    Application* app = malloc(sizeof(Application));
+    application* app = malloc(sizeof(application));
     if(!app) return NULL;
 
     app->context = create_context(width, height, title); 
@@ -26,7 +31,7 @@ Application* create_application(int width, int height, const char* title) {
     return app;
 }
 
-void destroy_application(Application* app) {
+void destroy_application(application* app) {
     destroy_context(app->context);
     free(app);
     glfwTerminate();

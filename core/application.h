@@ -3,13 +3,13 @@
 
 #include <context.h>
 
-typedef struct Application {
-    Context* context;
-} Application;
+typedef struct application {
+    context* context;
+} application;
 
-Application* create_application(int width, int height, const char* title);
-void destroy_application(Application* app);
-void run_application(Application* app);
+application* create_application(int width, int height, const char* title);
+void destroy_application(application* app);
+void run_application(application* app);
 
 
 #endif

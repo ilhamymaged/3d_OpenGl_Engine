@@ -2,41 +2,45 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-Window* create_window(int width, int height, const char* title) {
+window* create_window(int width, int height, const char* title) {
 
     if (!glfwInit()) {
         printf("Failed to initialize GLFW\n");
         return NULL;
     }
 
-    Window* window = malloc(sizeof(Window));
-    if(!window) return NULL;
+    window* m_window = malloc(sizeof(window));
+    if(!m_window) return NULL;
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window->frame = glfwCreateWindow(width, height, title, NULL, NULL);
-    if (!window->frame) {
+    m_window->frame = glfwCreateWindow(width, height, title, NULL, NULL);
+    if (!m_window->frame) {
         printf("Failed to create GLFW window\n");
         glfwTerminate();
-        free(window);
+        free(m_window);
         return NULL;
     }
 
-    glfwMakeContextCurrent(window->frame);
-    window->width = width;
-    window->height = height;
-    return window;
+    glfwMakeContextCurrent(m_window->frame);
+    m_window->width = width;
+    m_window->height = height;
+    return m_window;
 }
 
-void destroy_window(Window* window) {
+void destroy_window(window* window) {
     if(!window) return;
     glfwDestroyWindow(window->frame);
     free(window);
 }
 
-bool should_window_close(Window* window) {
+void close_window(window* window) {
+    glfwSetWindowShouldClose(window->frame, true);
+}
+
+bool should_window_close(window* window) {
     return glfwWindowShouldClose(window->frame);
 }
 

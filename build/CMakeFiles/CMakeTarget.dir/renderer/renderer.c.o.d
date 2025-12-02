@@ -137,4 +137,6 @@ CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/ray.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/affine2d-post.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h

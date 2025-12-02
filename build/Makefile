@@ -154,30 +154,6 @@ core/application.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/application.c.s
 .PHONY : core/application.c.s
 
-core/context.o: core/context.c.o
-.PHONY : core/context.o
-
-# target to build an object file
-core/context.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/context.c.o
-.PHONY : core/context.c.o
-
-core/context.i: core/context.c.i
-.PHONY : core/context.i
-
-# target to preprocess a source file
-core/context.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/context.c.i
-.PHONY : core/context.c.i
-
-core/context.s: core/context.c.s
-.PHONY : core/context.s
-
-# target to generate assembly for a file
-core/context.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/core/context.c.s
-.PHONY : core/context.c.s
-
 core/window.o: core/window.c.o
 .PHONY : core/window.o
 
@@ -226,6 +202,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/main.c.s
 .PHONY : main.c.s
 
+renderer/mesh.o: renderer/mesh.c.o
+.PHONY : renderer/mesh.o
+
+# target to build an object file
+renderer/mesh.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/mesh.c.o
+.PHONY : renderer/mesh.c.o
+
+renderer/mesh.i: renderer/mesh.c.i
+.PHONY : renderer/mesh.i
+
+# target to preprocess a source file
+renderer/mesh.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/mesh.c.i
+.PHONY : renderer/mesh.c.i
+
+renderer/mesh.s: renderer/mesh.c.s
+.PHONY : renderer/mesh.s
+
+# target to generate assembly for a file
+renderer/mesh.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/mesh.c.s
+.PHONY : renderer/mesh.c.s
+
 renderer/renderer.o: renderer/renderer.c.o
 .PHONY : renderer/renderer.o
 
@@ -249,6 +249,126 @@ renderer/renderer.s: renderer/renderer.c.s
 renderer/renderer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/renderer.c.s
 .PHONY : renderer/renderer.c.s
+
+renderer/shader.o: renderer/shader.c.o
+.PHONY : renderer/shader.o
+
+# target to build an object file
+renderer/shader.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shader.c.o
+.PHONY : renderer/shader.c.o
+
+renderer/shader.i: renderer/shader.c.i
+.PHONY : renderer/shader.i
+
+# target to preprocess a source file
+renderer/shader.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shader.c.i
+.PHONY : renderer/shader.c.i
+
+renderer/shader.s: renderer/shader.c.s
+.PHONY : renderer/shader.s
+
+# target to generate assembly for a file
+renderer/shader.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shader.c.s
+.PHONY : renderer/shader.c.s
+
+renderer/texture.o: renderer/texture.c.o
+.PHONY : renderer/texture.o
+
+# target to build an object file
+renderer/texture.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/texture.c.o
+.PHONY : renderer/texture.c.o
+
+renderer/texture.i: renderer/texture.c.i
+.PHONY : renderer/texture.i
+
+# target to preprocess a source file
+renderer/texture.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/texture.c.i
+.PHONY : renderer/texture.c.i
+
+renderer/texture.s: renderer/texture.c.s
+.PHONY : renderer/texture.s
+
+# target to generate assembly for a file
+renderer/texture.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/texture.c.s
+.PHONY : renderer/texture.c.s
+
+scene/context.o: scene/context.c.o
+.PHONY : scene/context.o
+
+# target to build an object file
+scene/context.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/context.c.o
+.PHONY : scene/context.c.o
+
+scene/context.i: scene/context.c.i
+.PHONY : scene/context.i
+
+# target to preprocess a source file
+scene/context.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/context.c.i
+.PHONY : scene/context.c.i
+
+scene/context.s: scene/context.c.s
+.PHONY : scene/context.s
+
+# target to generate assembly for a file
+scene/context.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/context.c.s
+.PHONY : scene/context.c.s
+
+scene/scene.o: scene/scene.c.o
+.PHONY : scene/scene.o
+
+# target to build an object file
+scene/scene.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/scene.c.o
+.PHONY : scene/scene.c.o
+
+scene/scene.i: scene/scene.c.i
+.PHONY : scene/scene.i
+
+# target to preprocess a source file
+scene/scene.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/scene.c.i
+.PHONY : scene/scene.c.i
+
+scene/scene.s: scene/scene.c.s
+.PHONY : scene/scene.s
+
+# target to generate assembly for a file
+scene/scene.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/scene/scene.c.s
+.PHONY : scene/scene.c.s
+
+utility/utility.o: utility/utility.c.o
+.PHONY : utility/utility.o
+
+# target to build an object file
+utility/utility.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/utility/utility.c.o
+.PHONY : utility/utility.c.o
+
+utility/utility.i: utility/utility.c.i
+.PHONY : utility/utility.i
+
+# target to preprocess a source file
+utility/utility.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/utility/utility.c.i
+.PHONY : utility/utility.c.i
+
+utility/utility.s: utility/utility.c.s
+.PHONY : utility/utility.s
+
+# target to generate assembly for a file
+utility/utility.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/utility/utility.c.s
+.PHONY : utility/utility.c.s
 
 vendor/glad/src/glad.o: vendor/glad/src/glad.c.o
 .PHONY : vendor/glad/src/glad.o
@@ -334,18 +454,33 @@ help:
 	@echo "... core/application.o"
 	@echo "... core/application.i"
 	@echo "... core/application.s"
-	@echo "... core/context.o"
-	@echo "... core/context.i"
-	@echo "... core/context.s"
 	@echo "... core/window.o"
 	@echo "... core/window.i"
 	@echo "... core/window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... renderer/mesh.o"
+	@echo "... renderer/mesh.i"
+	@echo "... renderer/mesh.s"
 	@echo "... renderer/renderer.o"
 	@echo "... renderer/renderer.i"
 	@echo "... renderer/renderer.s"
+	@echo "... renderer/shader.o"
+	@echo "... renderer/shader.i"
+	@echo "... renderer/shader.s"
+	@echo "... renderer/texture.o"
+	@echo "... renderer/texture.i"
+	@echo "... renderer/texture.s"
+	@echo "... scene/context.o"
+	@echo "... scene/context.i"
+	@echo "... scene/context.s"
+	@echo "... scene/scene.o"
+	@echo "... scene/scene.i"
+	@echo "... scene/scene.s"
+	@echo "... utility/utility.o"
+	@echo "... utility/utility.i"
+	@echo "... utility/utility.s"
 	@echo "... vendor/glad/src/glad.o"
 	@echo "... vendor/glad/src/glad.i"
 	@echo "... vendor/glad/src/glad.s"

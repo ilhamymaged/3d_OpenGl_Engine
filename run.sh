@@ -18,4 +18,4 @@ make || exit 1
 echo "Build complete."
 
 echo "Running project.."
-valgrind ./CMakeTarget
+./CMakeTarget

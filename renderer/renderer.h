@@ -3,14 +3,16 @@
 
 #include <glad/glad.h>
 #include <cglm/cglm.h>
+#include <mesh.h>
 
-typedef struct Renderer {
+typedef struct renderer {
     vec4* background_color;
-} Renderer;
+} renderer;
 
-Renderer* create_renderer(vec4* background_color);
-void destroy_renderer(Renderer* renderer);
-void clear_screen(Renderer* renderer);
+renderer* create_renderer(vec4* background_color);
+void destroy_renderer(renderer* renderer);
+void clear_screen(renderer* renderer);
 
+void draw_mesh(mesh* mesh);
 
 #endif
