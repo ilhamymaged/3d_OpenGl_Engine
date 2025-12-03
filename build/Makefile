@@ -370,6 +370,30 @@ renderer/shader.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shader.c.s
 .PHONY : renderer/shader.c.s
 
+renderer/shadow_map.o: renderer/shadow_map.c.o
+.PHONY : renderer/shadow_map.o
+
+# target to build an object file
+renderer/shadow_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shadow_map.c.o
+.PHONY : renderer/shadow_map.c.o
+
+renderer/shadow_map.i: renderer/shadow_map.c.i
+.PHONY : renderer/shadow_map.i
+
+# target to preprocess a source file
+renderer/shadow_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shadow_map.c.i
+.PHONY : renderer/shadow_map.c.i
+
+renderer/shadow_map.s: renderer/shadow_map.c.s
+.PHONY : renderer/shadow_map.s
+
+# target to generate assembly for a file
+renderer/shadow_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMakeTarget.dir/build.make CMakeFiles/CMakeTarget.dir/renderer/shadow_map.c.s
+.PHONY : renderer/shadow_map.c.s
+
 renderer/texture.o: renderer/texture.c.o
 .PHONY : renderer/texture.o
 
@@ -577,6 +601,9 @@ help:
 	@echo "... renderer/shader.o"
 	@echo "... renderer/shader.i"
 	@echo "... renderer/shader.s"
+	@echo "... renderer/shadow_map.o"
+	@echo "... renderer/shadow_map.i"
+	@echo "... renderer/shadow_map.s"
 	@echo "... renderer/texture.o"
 	@echo "... renderer/texture.i"
 	@echo "... renderer/texture.s"

@@ -50,6 +50,7 @@ set(OLD_GLOB
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/mesh.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shader.c"
+  "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shadow_map.c"
   "/home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

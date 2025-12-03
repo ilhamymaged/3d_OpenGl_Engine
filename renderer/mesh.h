@@ -8,6 +8,7 @@ typedef struct vertex {
     vec3 pos;
     vec3 normals;
     vec2 tex_coords;
+    vec3 color;
 } vertex;
 
 typedef struct mesh {
@@ -24,5 +25,6 @@ mesh* create_mesh(vertex* vertices, size_t vertices_count,
         uint32_t* indices, size_t indices_count,
         texture* texture);
 void destroy_mesh(mesh* mesh);
+mesh* create_plane(float size, int resolution, texture* tex);
 
 #endif

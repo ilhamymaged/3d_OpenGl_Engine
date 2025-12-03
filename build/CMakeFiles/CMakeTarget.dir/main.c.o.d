@@ -7,7 +7,7 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/renderer.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/glad/glad.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -24,7 +24,7 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/cglm.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/common.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/stdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -58,15 +58,15 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/float.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/types.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdalign.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/x86.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/simd/intrin.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/vec2.h \
@@ -121,7 +121,7 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/box.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/color.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/cglm/include/cglm/io.h \
- /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -148,4 +148,5 @@ CMakeFiles/CMakeTarget.dir/main.c.o: \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/scene/camera.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/inputs/inputs.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h \
+ /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/shadow_map.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/window.h

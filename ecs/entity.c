@@ -28,6 +28,15 @@ void add_component(entity_id e, component_type type, void* data) {
     }
 }
 
+bool has_component(entity_id e, component_type type) {
+    switch(type) {
+        case TRANSFORM:
+            return has_transform[e];
+        case RENDERABLE:
+            return has_renderer[e];
+    }
+}
+
 void remove_component(entity_id e, component_type type) {
     switch(type) {
         case TRANSFORM:

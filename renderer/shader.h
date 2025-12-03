@@ -13,6 +13,8 @@ void destroy_shader(shader* shader);
 void use_shader(shader* shader);
 
 void set_mat4(shader* shader, const char* name, mat4 value);
+void set_vec3(shader* shader, const char* name, vec3 value);
+void set_int(shader* shader, const char* name, int value);
 
 #endif
 

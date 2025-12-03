@@ -4,27 +4,30 @@
 #include <stdlib.h>
 
 void draw_entity(entity_id e, shader* shader) {
-    transform* t = get_component(e, TRANSFORM);
-    renderable* r = get_component(e, RENDERABLE);
 
-    mat4 model;
-    glm_mat4_identity(model);
+    if(has_component(e, TRANSFORM) && has_component(e, RENDERABLE)) {
+        transform *t = get_component(e, TRANSFORM);
+        renderable *r = get_component(e, RENDERABLE);
 
-    glm_translate(model, t->pos);
+        mat4 model;
+        glm_mat4_identity(model);
 
-    glm_rotate(model, t->rot[0], (vec3){1.0f, 0.0f, 0.0f});
-    glm_rotate(model, t->rot[1], (vec3){0.0f, 1.0f, 0.0f});
-    glm_rotate(model, t->rot[2], (vec3){0.0f, 0.0f, 1.0f});
+        glm_translate(model, t->pos);
 
-    glm_scale(model, t->scale);
+        glm_rotate(model, t->rot[0], (vec3){1.0f, 0.0f, 0.0f});
+        glm_rotate(model, t->rot[1], (vec3){0.0f, 1.0f, 0.0f});
+        glm_rotate(model, t->rot[2], (vec3){0.0f, 0.0f, 1.0f});
 
-    set_mat4(shader, "model", model);
-    draw_mesh(r->mesh);
+        glm_scale(model, t->scale);
+
+        set_mat4(shader, "model", model);
+        draw_mesh(r->mesh);
+    }
+
 }
-
 void draw_mesh(mesh* mesh) {
-    if(mesh->texture) bind_texture(mesh->texture);
     if(!mesh) return;
+    if(mesh->texture) bind_texture(mesh->texture);
     glBindVertexArray(mesh->VAO);
     glDrawElements(GL_TRIANGLES, mesh->indecies_count, GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
@@ -45,10 +48,13 @@ renderer* create_renderer(vec4* background_color) {
     return m_renderer;
 }
 
-void clear_screen(renderer* renderer) {
+void clear_color(renderer* renderer) {
     vec4* color = renderer->background_color;
     glClearColor((*color)[0], (*color)[1], (*color)[2], (*color)[3]);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
+
+void clear_buffer(int buffer) {
+    glClear(buffer);
 }
 
 void destroy_renderer(renderer* renderer) {

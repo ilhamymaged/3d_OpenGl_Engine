@@ -3,7 +3,7 @@ CMakeFiles/CMakeTarget.dir/renderer/texture.c.o: \
  /usr/include/stdc-predef.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/glad/glad.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glad/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -20,8 +20,8 @@ CMakeFiles/CMakeTarget.dir/renderer/texture.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/renderer/texture.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/stb/stb_image.h \
- /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \

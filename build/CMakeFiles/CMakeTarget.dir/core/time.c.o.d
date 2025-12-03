@@ -3,8 +3,8 @@ CMakeFiles/CMakeTarget.dir/core/time.c.o: \
  /usr/include/stdc-predef.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/core/time.h \
  /home/ilhamymaged/Dev/GameDevelopment/GameEngine/vendor/glfw/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

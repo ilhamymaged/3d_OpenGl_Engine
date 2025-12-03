@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CMakeTarget.dir/renderer/renderer.c.o.d"
   "CMakeFiles/CMakeTarget.dir/renderer/shader.c.o"
   "CMakeFiles/CMakeTarget.dir/renderer/shader.c.o.d"
+  "CMakeFiles/CMakeTarget.dir/renderer/shadow_map.c.o"
+  "CMakeFiles/CMakeTarget.dir/renderer/shadow_map.c.o.d"
   "CMakeFiles/CMakeTarget.dir/renderer/texture.c.o"
   "CMakeFiles/CMakeTarget.dir/renderer/texture.c.o.d"
   "CMakeFiles/CMakeTarget.dir/scene/camera.c.o"

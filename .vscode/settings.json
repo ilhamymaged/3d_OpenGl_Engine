@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "string_view": "c",
-        "system_error": "c"
-    }
+        "system_error": "c",
+        "map": "c",
+        "shadow.h": "c"
+    },
 }
